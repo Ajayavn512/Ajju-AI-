@@ -184,7 +184,7 @@ public class MainActivity extends Activity {
             return "Call karne ke liye number likho, jaise: call 9876543210. Main dialer kholunga; call tum confirm karoge.";
         }
 
-        if ("MESSAGE".equals(kind)) {
+        if ("MESSAGE".equals(kind) && !(lower.startsWith("sms ") || lower.startsWith("message "))) {
             return "SMS draft kholne ke liye number aur message is format mein bhejo: sms 9876543210 | Namaste. Sending se pehle tum message check karoge.";
         }
 
